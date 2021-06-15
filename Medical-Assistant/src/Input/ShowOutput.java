@@ -43,7 +43,7 @@ class ShowOutput {
                 System.out.println("An error occurred.");
                 e.printStackTrace();
             }
-            try{ FileInputStream input=new FileInputStream("D:\\Team57\\configs\\constants\\exception.properties");
+            try{ FileInputStream input=new FileInputStream("../Medical-Assistant/configs/constants/exception.properties");
             prop.load(input);
             c1.WriteTOCsv(data[3],d1);}
         catch(EmptyFileNameException e){ System.out.println(e+prop.getProperty("emptyNameMessage"));}
